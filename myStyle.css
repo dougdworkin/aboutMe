@@ -1,0 +1,197 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* box-sizing:border box set up */
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+
+/* general styles */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #222222;
+}
+
+
+p, a {
+	font-weight: 400;
+	line-height: 1.5;
+	margin-top: 1em;
+}
+
+#masthead, #footer {
+	text-align: center;
+}
+
+
+/* masthead styles */
+
+header#masthead {
+  background-color:#143067;
+  padding: 2em 0;
+  background: url("http://www.dougdworkin.com/thinkful/aboutMe/bannerBkSmall.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-top: solid 20px #f4c932;
+}
+
+#masthead > h1 {
+	font-size: 2em;
+	line-height: 1.5em;
+	color:white;
+	font-family: 'Gentium Book Basic', serif;font-family: 'Gentium Book Basic', serif;
+	font-style: italic;
+	text-shadow: 3px 3px 10px #000; 
+}
+
+#masthead > h1 strong {
+	font-size: 2em;
+	line-height: -2em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+/* main content styles */
+
+#mainContainer {
+	max-width: 45em;
+	margin: auto;
+	padding: 0 3% 5% 3%;
+}
+
+ main#mainContainer > section > h2 {
+	font-weight: 600;
+	font-size: 2em;
+	color: #143067;
+	border-bottom: solid 1px #143067;
+	margin-top: 1em;
+}
+
+
+section#aboutMe > h3 {
+	font-weight: 600;
+	font-size: 1.5em;
+	margin-top: 1em;
+	color: #6f2711;
+}
+
+section#aboutMe > h3 + p {
+	margin-top: .5em;
+}
+
+
+/* footer styles */
+
+footer {
+	background-color: #143067;
+	padding: 3%;
+	color: #fff;
+	margin: auto;
+	font-size: 1.3em;
+}
+
+#footer a {
+	color:#e4bd38;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	color:#f49232;
+}
+
+footer ul {
+	margin-top:	.5em;
+}
+
+.footer > li {	
+	display: block;
+}
+
+footer li > a {
+	font-size: 1.3em;
+	font-weight: 600;	
+}
+
+.credit {
+	font-size: .75em;
+	margin-top: 2em;
+}
+
+/* larger screen styles */
+
+@media screen and (min-width:632px) {
+
+header#masthead {
+	padding: 6em 0;
+	background: url("http://www.dougdworkin.com/thinkful/aboutMe/bannerBkLarge.jpg") no-repeat center;
+}
+
+#masthead > h1 strong {
+	font-size: 3em;
+}
+
+.footer > li {	
+	display: inline-block;
+	margin-right:1.5em;
+}
+
+.footer > li:first-child {	
+	margin-left:1.5em;
+}
+
+}
